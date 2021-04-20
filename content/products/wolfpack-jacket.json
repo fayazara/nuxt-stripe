@@ -1,0 +1,16 @@
+{
+    "name": "Wolfpack Jacket - Black",
+    "amount": 1599.95,
+    "currency": "USD",
+    "images": ["https://cdn.shopify.com/s/files/1/0262/0807/5798/products/SGT-1156_01_540x.jpg?v=1588355792"],
+    "color": {
+        "name": "Black",
+        "hex": "000000"
+    },
+    "sizes": [
+        "Small",
+        "Medium",
+        "Large"
+    ],
+    "description": "The WOLFPACK PU bomber jacket is produced from high-quality imitaition leather which is soft and luxurious to the touch. This well-fitted bomber jacket is lined with our signature quilted stitching and is finished off with antique silver branded zips, rivet buttons and zipped chest pocket. The sturdy tonal rib around the neck, hem and cuffs ensure warmth and comfort for every wearer. A branded zip puller finishes the pocket detail on the sleeve."
+}

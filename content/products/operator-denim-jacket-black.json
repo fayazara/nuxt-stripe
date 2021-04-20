@@ -1,0 +1,16 @@
+{
+    "name": "Operator Denim Jacket - Black",
+    "amount": 1399.95,
+    "currency": "USD",
+    "images": ["https://cdn.shopify.com/s/files/1/0262/0807/5798/products/SGT-1155B_01_540x.jpg?v=1588355783"],
+    "color": {
+        "name": "Black",
+        "hex": "000000"
+    },
+    "sizes": [
+        "Small",
+        "Medium",
+        "Large"
+    ],
+    "description": "Introducing the OPERATOR distressed denim trucker jacket. This fitted jacket is constructed from high quality 100% cotton and designed with a point collar. The jacket has cut and sew front panels, chest and side entry hand pockets and is detailed with branded rivet buttons, antique silver cuff zips and custom rip and repairs.This jacket has been expertly washed to create an aged Western look."
+}

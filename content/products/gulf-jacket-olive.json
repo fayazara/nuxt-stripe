@@ -1,0 +1,18 @@
+{
+    "name": "Gulf Jacket - Olive",
+    "amount": 1299.95,
+    "currency": "USD",
+    "images": [
+        "https://cdn.shopify.com/s/files/1/0262/0807/5798/products/SGT-1154-Olive_01_540x.jpg?v=1588355917"
+    ],
+    "color": {
+        "name": "Olive",
+        "hex": "4A4E43"
+    },
+    "sizes": [
+        "Small",
+        "Medium",
+        "Large"
+    ],
+    "description": "Introducing the GULF workwear jacket. This structured jacket is constructed from high quality cotton with 2% spandex for ease and comfort. Additional features include a point collar, concealed front buttons and left chest pocket. The jacket is washed with heavy enzyme wash and silicone softener for a soft and smooth handle."
+}

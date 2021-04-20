@@ -1,0 +1,16 @@
+{
+    "name": "Storm Jacket - Olive",
+    "amount": 949.95,
+    "currency": "USD",
+    "images": ["https://cdn.shopify.com/s/files/1/0262/0807/5798/products/SGT-1162A-Olive_Front_S_540x.jpg?v=1588356091"],
+    "color": {
+        "name": "Olive",
+        "hex": "4A4E43"
+    },
+    "sizes": [
+        "Small",
+        "Medium",
+        "Large"
+    ],
+    "description": "Introducing the STORM waterproof ripstop jacket. This olive lightweight jacket consists of a slight scooped hem and a birdseye netted hood lining for extra comfort. Extra features include elasticated cuffs, reverse zip details, hood toggles and a left chest contrast print. This garment is an exceptional transitional item to have!"
+}
