@@ -33,7 +33,7 @@
           <p>$ {{ product.amount }}</p>
           <p class="text-gray-100 text-sm">{{ product.description }}</p>
           <button
-            @click="buy"
+            @click="buy()"
             class="w-full py-3 bg-white text-gray-800 font-semibold"
           >
             Buy Now
@@ -58,8 +58,22 @@ export default {
   },
   methods: {
     async buy() {
-      const { data } = await this.$axios.post("/api/checkout", this.product);
-      this.stripe.redirectToCheckout({ sessionId: data.session.id });
+      try {
+        const { data } = await this.$axios.post("/api/checkout", {
+          order: {
+            name: this.product.name,
+            description: this.product.description,
+            images: this.product.images,
+            amount: this.product.amount * 100,
+            currency: this.product.currency,
+            quantity: 1,
+          },
+          slug: this.$route.params.slug,
+        });
+        this.stripe.redirectToCheckout({ sessionId: data.id });
+      } catch (err) {
+        alert(err);
+      }
     },
   },
   mounted() {

@@ -17,6 +17,7 @@ export default {
       }
     ]
   },
+  plugins: ["~plugins/modal.js"],
   components: true,
   buildModules: ["@nuxtjs/tailwindcss"],
   modules: ["@nuxtjs/axios", "@nuxt/content"],
