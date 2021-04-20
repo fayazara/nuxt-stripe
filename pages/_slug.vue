@@ -34,9 +34,11 @@
           <p class="text-gray-100 text-sm">{{ product.description }}</p>
           <button
             @click="buy()"
-            class="w-full py-3 bg-white text-gray-800 font-semibold"
+            class="w-full py-3 bg-white text-gray-800 font-semibold flex items-center justify-center space-x-2"
+            :class="{ 'opacity-50 cursor-not-allowed': loading }"
           >
-            Buy Now
+            <btn-loader v-if="loading" />
+            <p>Buy Now</p>
           </button>
         </div>
       </div>
@@ -54,11 +56,13 @@ export default {
   data() {
     return {
       stripe: null,
+      loading: false,
     };
   },
   methods: {
     async buy() {
       try {
+        this.loading = true;
         const { data } = await this.$axios.post("/api/checkout", {
           order: {
             name: this.product.name,
@@ -73,6 +77,7 @@ export default {
         this.stripe.redirectToCheckout({ sessionId: data.id });
       } catch (err) {
         alert(err);
+        this.loading = false;
       }
     },
   },
